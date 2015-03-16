@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Cadastro de Administrador</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+    <div class="container-fluid" align="center" >
+        <fieldset>
+        <div class="container-fluid form-group row">
+            <h2 align="center">
+                <div class="row col-md-3" ></div>
+
+                <div class="alert alert-info col-md-6" role="alert" align="center">
+                    <strong> Cadastro Administrador </strong>
+                </div>
+            </h2>
+        </div>
+
+        </fieldset>
+        <div class="container-fluid form-group row">
+                <form action="../Control/controleAdmin.php" method="POST">
+                    <div class="container-fluid form-group row col-md-4"></div>
+                        <div class="container-fluid col-md-4">
+                            <label>Login</label>
+                            <input type="text"
+                                   id="login"
+                                   name="login"
+                                   class="form-control" />
+                            <br />
+
+                            <label>Senha</label>
+                            <input type="password"
+                                   id="senha"
+                                   name="senha"
+                                   class="form-control" />
+                            <br />
+
+                            <button type="submit" ali class="btn btn-info btn-lg">Entrar</button>
+                        </div>
+                     </div>
+                </form>
+            </fieldset>
+        </div>
+     </div>
+
+</body>
+</html>

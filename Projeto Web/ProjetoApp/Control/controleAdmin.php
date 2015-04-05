@@ -10,7 +10,7 @@ include '..\Model\Admin\admin.php';
     $conecctionSuccess = $connect->loadAdminDataBase($admin->getLogin(), $admin->getSenha());
 
     if($conecctionSuccess == true){
-        print "<script> window.location.href='../View/home.html';</script>";
+        print "<script> window.location.href='../View/home.php';</script>";
     } else
         print "<script> window.location.href='../View/admin.html';</script>";
 

@@ -116,7 +116,7 @@ ul.alert-dropdown {
         position: fixed;
         top: 51px;
         left: 225px;
-        width: 16%;
+        width: 17%;
         height: 100%;
         margin-left: -225px;
         border: none;
@@ -126,7 +126,7 @@ ul.alert-dropdown {
     }
 
     .side-nav>li>a {
-        width: 225px;
+        width: 230px;
     }
 
     .side-nav li a:hover,

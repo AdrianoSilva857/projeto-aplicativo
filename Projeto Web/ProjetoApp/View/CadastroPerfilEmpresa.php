@@ -63,7 +63,7 @@
                    placeholder="teste@gmail.com"
                    class="form-control" />
         </div>
-        
+
     </div>
 
 </div>

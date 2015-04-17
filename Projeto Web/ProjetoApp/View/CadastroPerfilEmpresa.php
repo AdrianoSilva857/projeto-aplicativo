@@ -37,8 +37,9 @@
     </div>
     <div class="container-fluid">
         <div class="container-fluid col-md-2">
-            <img src="../View/img/Perfil.jpg" class="img-responsive img-circle" alt="Foto Perfil" style="width:120px;height:120px;">
+            <img src="../View/img/Perfil.jpg" class="img-responsive img-circle" alt="Foto Perfil" style="width:150px;height:150px;">
         </div>
+
         <div class="container-fluid col-md-5">
             <label for="txtNome">Nome do estabelecimento</label>
             <input type="text"

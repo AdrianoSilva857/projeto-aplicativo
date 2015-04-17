@@ -16,7 +16,7 @@
         public function generateID(){
             $tableName = $this->getTable();
 
-            $db = new PDO('sqlite:C:\SQLite\ProjetoApp.db');
+            $db = new PDO('sqlite:..\BD\ProjetoApp.db');
 
             $sth = $db->prepare("SELECT max(Id) FROM '$tableName'");
             $sth->execute();

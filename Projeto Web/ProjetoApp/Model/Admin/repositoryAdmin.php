@@ -1,8 +1,8 @@
 <?php
 
-include '..\Model\Admin\controleID.php';
+include '..\Model\Id\controleID.php';
 
-    class ConcectDataBase
+    class ConcectAdminDataBase
     {
         public function saveAdminDataBase($login, $senha)
         {

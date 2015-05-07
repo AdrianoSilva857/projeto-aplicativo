@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Cadastro Empresa</title>
@@ -7,6 +7,7 @@
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 
     <!-- Custom Fonts -->
@@ -35,83 +36,89 @@
         <h2>Cadastro de Empresas</h2>
         <hr />
     </div>
-    <div class="container-fluid">
-        <div class="container-fluid col-md-2">
-            <img src="../View/img/Perfil.jpg" class="img-responsive img-circle" alt="Foto Perfil" style="width:130px;height:130px;">
-        </div>
 
-        <div class="container-fluid col-md-10">
-            <div class="row col-md-8">
-                <label for="txtNome">Nome do estabelecimento</label>
+    <div class="container-fluid">
+        <form action="../Control/controleEmpresa.php" method="POST">
+            <div class="container-fluid col-md-2">
+                <img src="../View/img/Perfil.jpg" class="img-responsive img-circle" alt="Foto Perfil" style="width:130px;height:130px;">
+            </div>
+
+            <div class="container-fluid col-md-10">
+                <div class="row col-md-8">
+                    <label for="txtNome">Nome do estabelecimento</label>
+                    <input type="text"
+                           id="txtNomeLocal"
+                           name="txtNomeLocal"
+                           placeholder="Ex: Academia do Chopp"
+                           class="form-control" />
+                </div>
+                <div class="container-fluid col-md-3">
+                    <label for="txtFone">Fone</label>
+                    <input type="text"
+                           id="txtFone"
+                           name="txtFone"
+                           placeholder="Ex: (44)3253-4499"
+                           class="form-control" />
+                </div>
+            </div>
+            <div class="container-fluid col-md-3">
+                <label for="emlEmail">Email</label>
+                <input type="email"
+                       id="emlEmail"
+                       name="emlEmail"
+                       placeholder="teste@gmail.com"
+                       class="form-control" />
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="container-fluid col-md-2">
+                <label for="txtCep">CEP</label>
                 <input type="text"
-                       id="txtNomeLocal"
-                       name="txtNomeLocal"
-                       placeholder="Ex: Academia do Chopp"
+                       id="txtCep"
+                       name="txtCep"
+                       placeholder="Ex: 55555-555"
+                       class="form-control" />
+            </div>
+            <div class="container-fluid col-md-5">
+                <label for="txtLog">Logradouro</label>
+                <input type="text"
+                       id="txtLog"
+                       name="txtLog"
+                       placeholder="Ex: Av. Brasil"
                        class="form-control" />
             </div>
             <div class="container-fluid col-md-3">
-                <label for="txtFone">Fone</label>
+                <label for="txtBairro">Bairro</label>
                 <input type="text"
-                       id="txtFone"
-                       name="txttFone"
-                       placeholder="Ex: (44)3253-4499"
+                       id="txtBairro"
+                       name="txtBairro"
+                       placeholder="Ex: Centro"
                        class="form-control" />
             </div>
+            <div class="container-fluid col-md-2">
+                <label for="txtNumero">Nº</label>
+                <input type="text"
+                       id="txtNumero"
+                       name="txtNumero"
+                       placeholder="Ex: 222"
+                       class="form-control" />
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="container-fluid col-md-3">
+                <label for="sctCidade">Cidade</label>
+                <select name="sctCidade"
+                        id="sctCidade"
+                        class="form-control">
+                    <option value="Maringa">Maringá</option>
+                </select>
+
+            </div>
+          </div>
+
+        <button type="submit" class="btn btn-default btn-lg"><span class="network-name">Salvar</span></button>
         </div>
-        <div class="container-fluid col-md-3">
-            <label for="emlEmail">Email</label>
-            <input type="email"
-                   id="emlEmail"
-                   name="emlEmail"
-                   placeholder="teste@gmail.com"
-                   class="form-control" />
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="container-fluid col-md-2">
-            <label for="txtCep">CEP</label>
-            <input type="text"
-                   id="txtCep"
-                   name="txtCep"
-                   placeholder="Ex: 55555-555"
-                   class="form-control" />
-        </div>
-        <div class="container-fluid col-md-5">
-            <label for="txtLog">Logradouro</label>
-            <input type="text"
-                   id="txtLog"
-                   name="txtLog"
-                   placeholder="Ex: Av. Brasil"
-                   class="form-control" />
-        </div>
-        <div class="container-fluid col-md-3">
-            <label for="txtBairro">Bairro</label>
-            <input type="text"
-                   id="txtBairro"
-                   name="txtBairro"
-                   placeholder="Ex: Centro"
-                   class="form-control" />
-        </div>
-        <div class="container-fluid col-md-2">
-            <label for="txtNumero">Nº</label>
-            <input type="text"
-                   id="txtNumero"
-                   name="txtNumero"
-                   placeholder="Ex: 222"
-                   class="form-control" />
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="container-fluid col-md-3">
-            <label for="txtCidade">Cidade</label>
-            <input type="text"
-                   id="txtCidade"
-                   name="txtCidade"
-                   placeholder="Ex: Maringá"
-                   class="form-control" />
-        </div>
-      </div>
-      </div>
+        </form>
     </div>
 
 </div>

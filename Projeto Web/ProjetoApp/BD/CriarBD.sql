@@ -4,10 +4,16 @@ create table ADMIN(
     senha varchar(20)
 );
 
+CREATE TABLE UF (
+    id Integer primary key not null,
+    nome char(2) not null
+);
+
 CREATE TABLE CIDADE (
     id Integer primary key not null,
     nome varchar(50) not null,
-    uf char(2) not null
+    id_uf Integer not null,
+    FOREIGN KEY(id_uf) REFERENCES UF(id)
 );
 
 CREATE TABLE EMPRESA (

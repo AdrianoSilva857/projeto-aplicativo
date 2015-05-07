@@ -1,0 +1,33 @@
+insert into admin(id, login, senha) values(1, "admin", "123");
+
+insert into uf values (1, "AC");
+insert into uf values (2, "AL");
+insert into uf values (3, "AP");
+insert into uf values (4, "AM");
+insert into uf values (5, "BA");
+insert into uf values (6, "CE");
+insert into uf values (7, "DF");
+insert into uf values (8, "ES");
+insert into uf values (9, "Go");
+insert into uf values (10, "MA");
+insert into uf values (11, "MT");
+insert into uf values (12, "MS");
+insert into uf values (13, "MG");
+insert into uf values (14, "PA");
+insert into uf values (15, "PB");
+insert into uf values (16, "PR");
+insert into uf values (17, "PE");
+insert into uf values (18, "PI");
+insert into uf values (19, "RJ");
+insert into uf values (20, "RN");
+insert into uf values (21, "RS");
+insert into uf values (22, "RO");
+insert into uf values (23, "RR");
+insert into uf values (24, "SC");
+insert into uf values (25, "SP");
+insert into uf values (26, "SE");
+insert into uf values (27, "TO");
+
+insert into cidade values(1, "Maringá", 16);
+insert into cidade values(2, "Floresta", 16);
+insert into cidade values(3, "Londrina", 16);

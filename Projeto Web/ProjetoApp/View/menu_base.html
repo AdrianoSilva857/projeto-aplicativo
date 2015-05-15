@@ -29,7 +29,7 @@
                 <a class="navbar-brand" href="home.php">Projeto App - Rolê</a>
             </div>
             <div class="navbar-header">
-                <a class="navbar-brand" href="home.php"><i class="fa fa-fw fa-plus-circle"></i>Novo</a>
+                <a class="navbar-brand" href="home.php"><i class="fa fa-fw fa-plus-circle"></i> Novo Evento</a>
             </div>
 
             <ul class="nav navbar-right top-nav">
@@ -135,8 +135,16 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="CadastroPerfilEmpresa.php"><i class="fa fa-fw fa-dashboard"></i> Cadastro Empresa</a>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#empresa"><i class="fa fa-fw fa-plus-square-o"></i> Cadastro de Empresa <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="empresa" class="collapse">
+                            <li>
+                                <a href="CadastroEmpresa.php">Nova Empresa</a>
+                            </li>
+                            <li>
+                                <a href="ListagemEmpresa.php">Listar Empresas</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>

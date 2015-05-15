@@ -23,10 +23,10 @@
 
             $result = $sth->fetch(PDO::FETCH_ASSOC);
             $valor = $result['max(Id)'];
-
             /*echo "AAA==>>".$valor."<<<==BBBB";
-            print_r($result);
-            print("\n");*/
+            "<<<==BBBB";
+                        print_r($result);
+                        print("\n");*/
 
             return $valor + 1;
         }

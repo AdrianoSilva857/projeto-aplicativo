@@ -31,5 +31,20 @@ include '..\Model\Id\controleID.php';
                                                         "'$id_cidade')");
         }
 
+        public function loadEmpresaDataBase()
+        {
+            $result = $this->db->prepare("SELECT * FROM EMPRESA order by id desc");
+
+            $result->execute();
+
+            $listaEmpresas = $result->fetchAll(PDO::FETCH_ASSOC);
+            $empresas = $listaEmpresas;
+
+            return $empresas;
+
+        }
+
     }
+
+
 ?>

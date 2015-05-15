@@ -22,22 +22,24 @@ include '..\Model\Empresa\empresa.php';
     $db = new PDO('sqlite:..\BD\ProjetoApp.db');
 
     $connect = new ConnectEmpresaDataBase($db);
-    $conecctionSuccess = false;
-    $conecctionSuccess = $connect->saveEmpresaDataBase($empresa->getNome(),
-                                                       $empresa->getEmail(),
-                                                       $empresa->getTelefone(),
-                                                       $empresa->getCep(),
-                                                       $empresa->getBairro(),
-                                                       $empresa->getLogradouro(),
-                                                       $empresa->getNumero(),
-                                                       $empresa->getFotoPerfil(),
-                                                       $empresa->getFotoCapa(),
-                                                       $empresa->getFotoGaleria(),
-                                                       $empresa->getAvaliacao(),
-                                                       $empresa->getIdCidade());
 
-    if($conecctionSuccess == true){
-        print "<script> window.location.href='../View/home.php';</script>";
-    } else
-        //print "<script> window.location.href='../View/admin.html';</script>";
+    try {
+        $connect->saveEmpresaDataBase($empresa->getNome(),
+                                      $empresa->getEmail(),
+                                      $empresa->getTelefone(),
+                                      $empresa->getCep(),
+                                      $empresa->getBairro(),
+                                      $empresa->getLogradouro(),
+                                      $empresa->getNumero(),
+                                      $empresa->getFotoPerfil(),
+                                      $empresa->getFotoCapa(),
+                                      $empresa->getFotoGaleria(),
+                                      $empresa->getAvaliacao(),
+                                      $empresa->getIdCidade());
+
+        print "<script> window.location.href='../View/ListagemEmpresa.php';</script>";
+
+    } catch(Exception $e) {
+        echo 'Não foi possível gravar a Empresa no banco. Motivo: ',  $e->getMessage(), "\n";
+    }
 ?>

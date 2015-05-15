@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <title>Cadastro Empresa</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +60,8 @@
                            id="txtNomeLocal"
                            name="txtNomeLocal"
                            placeholder="Ex: Academia do Chopp"
-                           class="form-control" />
+                           class="form-control"
+                           required="true" />
                 </div>
                 <div class="container-fluid col-md-3">
                     <label for="txtFone">Fone</label>
@@ -58,7 +69,8 @@
                            id="txtFone"
                            name="txtFone"
                            placeholder="Ex: (44)3253-4499"
-                           class="form-control" />
+                           class="form-control"
+                           required="true" />
                 </div>
             </div>
             <div class="container-fluid col-md-3">
@@ -69,15 +81,16 @@
                        placeholder="teste@gmail.com"
                        class="form-control" />
             </div>
-          </div>
-          <div class="container-fluid">
-            <div class="container-fluid col-md-2">
-                <label for="txtCep">CEP</label>
-                <input type="text"
-                       id="txtCep"
-                       name="txtCep"
-                       placeholder="Ex: 55555-555"
-                       class="form-control" />
+           </div>
+           <div class="container-fluid">
+                <div class="container-fluid col-md-2">
+                    <label for="txtCep">CEP</label>
+                    <input type="text"
+                        id="txtCep"
+                        name="txtCep"
+                        placeholder="Ex: 55555-555"
+                        class="form-control"
+                        required="true" />
             </div>
             <div class="container-fluid col-md-5">
                 <label for="txtLog">Logradouro</label>
@@ -85,7 +98,8 @@
                        id="txtLog"
                        name="txtLog"
                        placeholder="Ex: Av. Brasil"
-                       class="form-control" />
+                       class="form-control"
+                       required="true" />
             </div>
             <div class="container-fluid col-md-3">
                 <label for="txtBairro">Bairro</label>
@@ -93,7 +107,8 @@
                        id="txtBairro"
                        name="txtBairro"
                        placeholder="Ex: Centro"
-                       class="form-control" />
+                       class="form-control"
+                       required="true" />
             </div>
             <div class="container-fluid col-md-2">
                 <label for="txtNumero">Nº</label>
@@ -115,9 +130,14 @@
 
             </div>
           </div>
-
-        <button type="submit" class="btn btn-default btn-lg"><span class="network-name">Salvar</span></button>
+        <div class="container-fluid col-md-12">
+            <div class="container-fluid col-md-10">
+            </div>
+            <div class="container-fluid col-md-2">
+                <button type="submit" class="btn btn-success btn-lg"><span class="network-name">Salvar</span></button>
+            </div>
         </div>
+
         </form>
     </div>
 
